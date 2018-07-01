@@ -22,16 +22,16 @@ const sequelize = new Sequelize('Music', 'David', null, {
 }); //end
 
 //start models
-
-const Artist = sequelize.define(
-    'Artist',
+/*
+const Form = sequelize.define(
+    'Form',
     {
-        ArtistId: {
+        FormId: {
             type: Sequelize.INTEGER,
             autoIncrement: true, 
             primaryKey: true
         },
-        Name: Sequelize.STRING
+        Name: Sequelize.STRING,
     },
     {
         freezeTableName: true, 
@@ -39,39 +39,12 @@ const Artist = sequelize.define(
     }
 );
 
-
-
-const Album = sequelize.define(
-    'Album',
-    {
-        AlbumId: {
-            type: Sequelize.INTEGER,
-            autoIncrement: true, 
-            primaryKey: true
-        },
-        Title: Sequelize.STRING
-    },
-    {
-        freezeTableName: true, 
-        timestamps: false
-    }
-);
-
-Album.belongsTo(Artist, {foreignKey: 'ArtistId', targetKey: 'ArtistId'});
 //end models
-
+*/
 //display page
 app.get('/allForms', (req, res) => {
 
-    Album.findAll({
-        include: [{
-            model: Artist
-        }]
-    }).then(Album => {
-    
-    res.render('allForms', {Album});
-       
-    });
+    res.render('allForms');
 });
 
 app.get('/newForm', (request, response) => {
