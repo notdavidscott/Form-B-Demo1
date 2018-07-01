@@ -39,7 +39,7 @@ const Artist = sequelize.define(
     }
 );
 
-Album.belongsTo(Artist, {foreignKey: 'ArtistId', targetKey: 'ArtistId'});
+
 
 const Album = sequelize.define(
     'Album',
@@ -57,6 +57,7 @@ const Album = sequelize.define(
     }
 );
 
+Album.belongsTo(Artist, {foreignKey: 'ArtistId', targetKey: 'ArtistId'});
 //end models
 
 //display page

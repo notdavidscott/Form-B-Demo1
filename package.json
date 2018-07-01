@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/notdavidscott/Form-B-Demo1/issues"
   },
-  "homepage": "https://github.com/notdavidscott/Form-B-Demo1#readme"
+  "homepage": "https://github.com/notdavidscott/Form-B-Demo1#readme",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "react-router": "^4.3.1",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.1"
+  }
 }
