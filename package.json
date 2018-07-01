@@ -1,0 +1,19 @@
+{
+  "name": "form-b-demo1",
+  "version": "1.0.0",
+  "description": "Form-B-Demo1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdavidscott/Form-B-Demo1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notdavidscott/Form-B-Demo1/issues"
+  },
+  "homepage": "https://github.com/notdavidscott/Form-B-Demo1#readme"
+}
